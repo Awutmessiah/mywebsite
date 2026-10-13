@@ -1,1 +1,72 @@
-
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xyzawut</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #080808;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    #enter {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #080808;
+      z-index: 5;
+      cursor: pointer;
+      font-size: 13px;
+      letter-spacing: 5px;
+    }
+    #main { display: none; padding: 20px; }
+    h1 { font-size: clamp(35px, 9vw, 65px); margin: 0 0 18px; }
+    p { color: #aaa; letter-spacing: 2px; }
+    .line {
+      width: 100px;
+      height: 1px;
+      background: #555;
+      margin: 25px auto;
+    }
+    .status { font-size: 12px; color: #999; }
+    .dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background: #55ff88;
+      border-radius: 50%;
+      margin-right: 7px;
+    }
+  </style>
+</head>
+<body>
+  <div id="enter">CLICK TO ENTER</div>
+  <main id="main">
+    <h1>Xxmrvrkx</h1>
+    <p>I love my family</p>
+    <div class="line"></div>
+    <p>One Of One #Awut</p>
+    <div class="status"><span class="dot"></span>ONLINE</div>
+  </main>
+  <audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    document.getElementById("enter").addEventListener("click", () => {
+      document.getElementById("enter").style.display = "none";
+      document.getElementById("main").style.display = "block";
+      document.getElementById("music").play().catch(() => {});
+    });
+  </script>
+</body>
+</html>
